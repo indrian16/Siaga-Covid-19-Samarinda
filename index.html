@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
     <!-- Meta Data -->
@@ -12,50 +13,64 @@
 
     <!-- Local Module -->
     <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
-    <script src='js/main.js'></script>
+    <script src="js/view.js"></script>
+    <script src='js/logic.js'></script>
 
     <!-- Booststrap -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="bootstrap/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="bootstrap/js/popper.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
 
 </head>
-<body>
+<!-- The scrollable area -->
 
+<body data-spy="scroll" data-target=".navbar">
     <header>
-        <nav class="navbar navbar-custom">
+        <nav id="navbar" class="navbar navbar-light bg-light fixed-top">
 
             <!-- Brand Logo -->
             <a class="navbar-brand" href="#" style="margin-left: 38px;">
-              Lapor Covid 19
+                Siaga Covid 19
             </a>
 
             <!-- Center Menu -->
             <ul class="nav justify-content-center">
                 <li class="nav-item">
-                  <a class="nav-link active" href="#">Home</a>
+                    <a class="nav-link" href="#home">Beranda</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#report">Laporan</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Report</a>
+                    <a class="nav-link" href="#news">Berita</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Contact Us</a>
+                    <a class="nav-link" href="#tips">Tips</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">Tentang</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Kontak</a>
                 </li>
             </ul>
 
             <!-- End Menu / Right -->
             <ul class="nav justify-content-end" style="margin-right: 38px;">
                 <li class="nav-item">
-                  <a id="btn-login" role="button" class="btn btn-outline-danger" href="#">Login</a>
+                    <button id="btn-theme" onclick="btnThemeOnClick()" class="btn btn-outline-danger">Dark Mode</a>
                 </li>
             </ul>
 
         </nav>
     </header>
     <main>
-        <div class="container">
+
+        <!-- Home Content -->
+        <div id="home" class="container">
+
+            <div style="margin: 54px;"></div>
 
             <button id="btn-information" type="button" class="btn btn-light btn-lg">#Get Well Soon?, Earth!</button>
 
@@ -84,88 +99,61 @@
 
             </div>
 
+            
+        </div>
+        <!-- Close Main Content -->
+        <!-- Report Content -->
+        <div id="report" class="container" style="background-color: teal;">
+            
+            <h3 class="text-center" style="color: white;">Angka Kasus COVID-19 di Samarinda</h3>
+
+            <div style="margin: 38px;"></div>
+
             <!-- Card Information -->
-            <div class="row align-items-center">
-
-              <!-- Active -->
-              <div class="col-xl-3 col-md-6 col-sm-8">
-                <div class="card text-white" style="background-color: var(--violet-color); height: 12rem; width:16rem; border-radius: 16px;">
-                  <div class="card-body">
-                    <!-- Title -->
-                    <h5 class="card-title">Active</h5>
-                    <h1 class="card-text" style="color: gold;">2.177.864</h1>
-                    <!-- History Data Information -->
-                    <div class="row align-items-center">
-                      <div class="col-4">
-                        <img src="assets/icons/ic_up.svg">
-                      </div>
-                      <div class="col">
-                        12.833
-                      </div>
-                    </div>
-                  </div>
+            <div id="card" class="card-light bg-light" style="border-radius: 16px; padding: 16px;">
+                <div class="card-body">
+                    <h4>Jumlah Covid Yang Terkomfirmasi Di Samarinda</h4>
+                    <div style="margin: 24px;"></div>
+                    <table id="table" class="table table-light table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">Positif</th>
+                                <th scope="col">Negatif</th>
+                                <th scope="col">Sembuh</th>
+                                <th scope="col">Meninggal</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>7 Orang</td>
+                                <td>101 Orang</td>
+                                <td>61 Orang</td>
+                                <td>1 Orang</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <small style="margin-top: 24px;">Update Data Pada Tanggal: 04 Juli 2020</small>
                 </div>
-              </div>
-              <!-- Close Active -->
-
-              <!-- Death -->
-              <div class="col-xl-3 col-md-6 col-sm-8">
-                <div class="card text-white" style="background-color: var(--violet-color); height: 12rem; width:16rem; border-radius: 16px;">
-                  <div class="card-body">
-                    <!-- Title -->
-                    <h5 class="card-title">Death</h5>
-                    <h1 class="card-text" style="color: tomato;">244.780</h1>
-                    <!-- History Data Information -->
-                    <div class="row align-items-center">
-                      <div class="col-4">
-                        <img src="assets/icons/ic_up.svg">
-                      </div>
-                      <div class="col">
-                        4.420
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Close Death -->
-
-              <!-- Recovered -->
-              <div class="col-xl-3 col-md-6 col-sm-8">
-                <div class="card text-white" style="background-color: var(--violet-color); height: 12rem; width:16rem; border-radius: 16px;">
-                  <div class="card-body">
-                    <!-- Title -->
-                    <h5 class="card-title">Recovered</h5>
-                    <h1 class="card-text" style="color: lawngreen;">1.121.576</h1>
-                    <!-- History Data Information -->
-                    <div class="row align-items-center">
-                      <div class="col-4">
-                        <img src="assets/icons/ic_up.svg">
-                      </div>
-                      <div class="col">
-                        12.833
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Close Recovered -->
-
-              <!-- More Detail -->
-              <div class="col-xl-3 col-md-6 col-sm-8">
-                <div class="card text-white" style="background-color: var(--violet-color); height: 12rem; width: 16rem; border-radius: 16px;">
-                  <div class="card-body align-items-center d-flex justify-content-center">
-                    <button id="btn-learn" type="button" class="btn btn-danger btn-lg">Learn More</button>
-                  </div>
-                </div>
-              </div>
-              <!-- Close More Detail -->
-
             </div>
-            <!-- Close Information -->
-
+            <!-- Card Information -->
+            
+        </div>
+        <!-- Close Report Content -->
+        <div id="news" class="container" style="background-color: crimson;">
+            <div style="height: 500px;"></div>
+        </div>
+        <div id="tips" class="container" style="background-color: blueviolet;">
+            <div style="height: 500px;"></div>
+        </div>
+        <div id="about" class="container" style="background-color: deeppink;">
+            <div style="height: 500px;"></div>
+        </div>
+        <div id="contact" class="container" style="background-color: lawngreen;">
+            <div style="height: 500px;"></div>
         </div>
     </main>
     <footer>Footer</footer>
-
+    <script src='js/main.js'></script>
 </body>
+
 </html>
