@@ -65,7 +65,7 @@
 
         </nav>
     </header>
-    <main>
+    <main id="main" class="bg-light text-dark">
 
         <!-- Home Content -->
         <div id="home" class="container">
@@ -76,7 +76,7 @@
 
             <!-- Headline Text -->
             <div id="headline" class="col">
-                <h2 style="color: white;">
+                <h2>
                     Lets Help <br>
                     Recover The Earth,
                 </h2>
@@ -84,7 +84,7 @@
 
                 <div style="margin: 24px;"></div>
 
-                <h4 style="color: gainsboro;">
+                <h4>
                     It is a long established fact that a <br>
                     readable content of a page when
                 </h4>
@@ -103,14 +103,84 @@
         </div>
         <!-- Close Main Content -->
         <!-- Report Content -->
-        <div id="report" class="container" style="background-color: teal;">
+        <div id="report" class="container">
             
-            <h3 class="text-center" style="color: white;">Angka Kasus COVID-19 di Samarinda</h3>
+            <h3 class="text-center">Laporan Kasus COVID-19 di Samarinda</h3>
 
             <div style="margin: 38px;"></div>
 
+            <!-- Two Card -->
+            <div class="row justify-content-md-center">
+
+                <!-- ODP Card -->
+                <div class="col">
+
+                    <div class="card shadow" style="border-radius: 16px;">
+                        <div class="row no-gutters">
+                            <div class="col-auto">
+                                <img src="assets/icons/004-cough.svg" class="img-fluid" alt="">
+                            </div>
+                            <div class="col" style="padding: 16px;">
+                                <div class="card-block px-2">
+                                    <h4 class="card-title">ODP</h4>
+                                    <p class="card-text">Orang Dalam Pemantauan</p>
+                                    <h5>2470 Orang</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer" style="padding: 28px;">
+    
+    
+                            <h5>Proses Pemantauan</h5>
+                            <p>85 Orang</p>
+                            <hr>
+                            <h5>Selesai Pemantauan</h5>
+                            <p>2385 Orang</p>
+    
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Close ODP Card -->
+
+                <!-- PDP Card -->
+                <div class="col">
+
+                    <div class="card shadow" style="border-radius: 16px;">
+                        <div class="row no-gutters">
+                            <div class="col-auto">
+                                <img src="assets/icons/005-fever.svg" class="img-fluid" alt="">
+                            </div>
+                            <div class="col" style="padding: 16px;">
+                                <div class="card-block px-2">
+                                    <h4 class="card-title">PDP</h4>
+                                    <p class="card-text">Orang Dalam Pemantauan</p>
+                                    <h5>2470 Orang</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer" style="padding: 28px;">
+    
+    
+                            <h5>Proses Pemantauan</h5>
+                            <p>85 Orang</p>
+                            <hr>
+                            <h5>Selesai Pemantauan</h5>
+                            <p>2385 Orang</p>
+    
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Close PDP Card -->
+            </div>
+            <!-- Close Two Card -->
+
+            <div style="margin: 24px;"></div>
+
             <!-- Card Information -->
-            <div id="card" class="card-light bg-light" style="border-radius: 16px; padding: 16px;">
+            <div class="card card-light bg-light shadow-lg" style="border-radius: 16px; padding: 16px;">
                 <div class="card-body">
                     <h4>Jumlah Covid Yang Terkomfirmasi Di Samarinda</h4>
                     <div style="margin: 24px;"></div>
@@ -139,8 +209,65 @@
             
         </div>
         <!-- Close Report Content -->
-        <div id="news" class="container" style="background-color: crimson;">
-            <div style="height: 500px;"></div>
+        <div id="news" class="container">
+            
+            <!-- Corousel -->
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+
+                <!-- List News -->
+                <div class="carousel-inner">
+                    <!-- Berita 1 -->
+                    <div class="carousel-item active">
+                        <!-- Image -->
+                        <img class="d-block w-100" src="assets/images/news_1.jpeg" alt="First slide">
+                        <!-- Caption -->
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Kasus Covid-19 di Samarinda Bertambah 7, Meninggal 2</h5>
+                            <p>terdapat penambahan 7 kasus positif Covid-19 di Samarinda. Dengan adanya tambahan 7 kasus tersebut, kini total kasus positif virus corona di ibu kota Kaltim mencapai 85 orang.</p>
+                        </div>
+                    </div>
+                    <!-- Berita 2 -->
+                    <div class="carousel-item">
+                        <!-- Image -->
+                        <img class="d-block w-100" src="assets/images/news_1.jpeg" alt="Second slide">
+                        <!-- Caption -->
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Kasus Covid-19 di Samarinda Bertambah 7, Meninggal 2</h5>
+                            <p>terdapat penambahan 7 kasus positif Covid-19 di Samarinda. Dengan adanya tambahan 7 kasus tersebut, kini total kasus positif virus corona di ibu kota Kaltim mencapai 85 orang.</p>
+                        </div>
+                    </div>
+                    <!-- Close Berita 2 -->
+                    <!-- Berita 3 -->
+                    <div class="carousel-item">
+                        <!-- Image -->
+                        <img class="d-block w-100" src="assets/images/news_1.jpeg" alt="Third slide">
+                        <!-- Caption -->
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Kasus Covid-19 di Samarinda Bertambah 7, Meninggal 2</h5>
+                            <p>terdapat penambahan 7 kasus positif Covid-19 di Samarinda. Dengan adanya tambahan 7 kasus tersebut, kini total kasus positif virus corona di ibu kota Kaltim mencapai 85 orang.</p>
+                        </div>
+                    </div>
+                    <!-- Close Berita 2 -->
+                </div>
+                <!-- Close News -->
+
+                <!-- Prev and Next Button -->
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <!-- Close Corousel -->
+
         </div>
         <div id="tips" class="container" style="background-color: blueviolet;">
             <div style="height: 500px;"></div>

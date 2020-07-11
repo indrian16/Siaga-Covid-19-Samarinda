@@ -7,15 +7,9 @@ function changeMode(dark) {
 
     if (dark) {
         console.log("Mode Dark")
-        btnThemeText("Mode Light")
-        navbarDark()
-        cardDark()
-        tableDark()
+        darkTheme()
     } else {
         console.log("Mode Light")
-        btnThemeText("Mode Dark")
-        navbarLight()
-        cardLight()
-        tableLight()
+        lightTheme()
     }
 }
