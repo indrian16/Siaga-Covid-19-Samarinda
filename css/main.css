@@ -109,10 +109,25 @@ html, body, main, footer {
 }
 
 /* News */
-
-
-
 /* Close News */
+/* Prevention */
+#prevention {
+    padding: 8%;
+    background-color: var(--primary-color);
+}
+/* Close Prevention */
+
+/* Shop */
+
+.carousel {
+    background-color: white !important;
+}
+.carousel-inner {
+    background-color: white !important;
+}
+
+/* Close Shop */
+
 
 /* Close Main */
 
