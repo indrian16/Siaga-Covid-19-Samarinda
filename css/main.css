@@ -63,6 +63,13 @@ html, body, main, footer {
     padding: 54px;
 }
 
+/* Home */
+
+#home {
+    padding: 8%;
+    background-color: var(--primary-color);
+}
+
 #btn-information {
     background-color: var(--violet-color);
     color: white;
@@ -73,6 +80,7 @@ html, body, main, footer {
 #headline {
     margin-top: 28px;
     margin-bottom: 54px;
+    color: white;
 }
 
 #btn-learn {
@@ -94,19 +102,14 @@ html, body, main, footer {
     padding-top: 16px;
     padding-bottom: 16px;
     border-radius: 16px;
+    color: white;
 }
 #btn-video:hover {
     border-color: var(--secondary-color);
     background-color: var(--secondary-color);
 }
 
-.card {    
-    margin-top: 16px;
-}
-
-.card-body {
-    margin: 16px;
-}
+/* Close Home */
 
 /* News */
 /* Close News */
@@ -119,12 +122,6 @@ html, body, main, footer {
 
 /* Shop */
 
-.carousel {
-    background-color: white !important;
-}
-.carousel-inner {
-    background-color: white !important;
-}
 
 /* Close Shop */
 
