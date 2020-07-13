@@ -59,6 +59,10 @@ html, body, main, footer {
 
 /* Main */
 
+.card-body {
+    margin: 4px;
+}
+
 .container {
     padding: 54px;
 }
