@@ -9,7 +9,7 @@ var dark = false
 changeMode(dark) // Default Mode Light
 
 
-// Listener
+// Listener Mendegarkan setiap click
 function btnThemeOnClick() {
 
     // Menganti State

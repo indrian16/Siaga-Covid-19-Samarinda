@@ -119,15 +119,17 @@ html, body, main, footer {
 /* Close News */
 /* Prevention */
 #prevention {
-    padding: 8%;
     background-color: var(--primary-color);
+    padding-top: 54px;
+    padding-left: 110px;
+    padding-right: 110px;
+    padding-bottom: 54px;
 }
 /* Close Prevention */
 
-/* Shop */
+/* Himbauan */
 
-
-/* Close Shop */
+/* Close Himbauan */
 
 
 /* Close Main */
