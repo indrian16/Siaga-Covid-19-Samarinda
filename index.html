@@ -13,8 +13,11 @@
 
     <!-- Local Module -->
     <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <!-- Ada 3 Script, untuk mengatur tema website,
+    dan berbagai tangung jawab -->
     <script src="js/view.js"></script>
     <script src='js/logic.js'></script>
+    <!-- main.js berada di paling bawah, untuk melakukan eksekusi -->
 
     <!-- Booststrap -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
@@ -25,18 +28,24 @@
 </head>
 <!-- The scrollable area -->
 
-<!-- Body Mengunakan Scoll Spy -->
+<!-- Body Mengunakan Scoll Spy Boostrap -->
+<!-- Dengan target class NavBar -->
 <body data-spy="scroll" data-target=".navbar">
+
+    <!-- Header -->
     <header>
-        <nav id="navbar" class="navbar shadow   navbar-light bg-light fixed-top">
+
+        <!-- Membuat Navigation Bar, shadow regular, dengan tema default Light -->
+        <nav id="navbar" class="navbar shadow  navbar-light bg-light fixed-top">
 
             <!-- Brand Logo -->
             <a class="navbar-brand" href="#" style="margin-left: 38px;">
                 SiCosa
             </a>
 
-            <!-- Center Menu -->
+            <!-- Center Menu, Content di set rata tengah-->
             <ul class="nav justify-content-center">
+                <!-- Setiap target href akan mengarah ke id container -->
                 <li class="nav-item">
                     <a class="nav-link" href="#home">Beranda</a>
                 </li>
@@ -60,26 +69,33 @@
                 </li>
             </ul>
 
-            <!-- End Menu / Right -->
+            <!--  Menu Kanan -->
             <ul class="nav justify-content-end" style="margin-right: 38px;">
+                
+                <!-- Item Ini berisi tombol untuk menganti tema light dan dark -->
                 <li class="nav-item">
+                    <!-- Button ini mengunakan tema outline -->
                     <button id="btn-theme" onclick="btnThemeOnClick()" class="btn btn-outline-danger">Dark Mode</a>
                 </li>
             </ul>
 
         </nav>
     </header>
+
+    <!-- Main, mengunakan tema dinamis yang di atur oleh main.js -->
     <main id="main" class="bg-light text-dark">
 
-        <!-- Home Content -->
+        <!-- Home Content, dengan container full widht/height -->
         <div id="home" class="container-fluid">
 
+            <!-- Ini adalah white space, dengan margin -->
             <div style="margin: 54px;"></div>
 
             <button id="btn-information" type="button" class="btn btn-light btn-lg">#Cepat membaik bumiku!</button>
 
-            <!-- Headline Information -->
+            <!-- Headline Information, dengan grid system -->
             <div id="headline" class="row">
+                <!-- Col Secara Vertical -->
                 <div class="col">
                     <h2>
                         Mari Bersama Lawan Covid-19
@@ -92,6 +108,7 @@
                              – Ustad Abdullah Taslim, M.A. –
                         </h4>
 
+                        <!-- Ini adalah white space, dengan margin -->
                         <div style="margin: 24px;"></div>
 
                         <div class="row" style="margin-bottom: 54px;">
@@ -199,6 +216,7 @@
                 <div class="card-body">
                     <h4>Jumlah Covid Yang Terkomfirmasi Di Samarinda</h4>
                     <div style="margin: 24px;"></div>
+                    <!-- Table -->
                     <table id="table" class="table table-light table-striped">
                         <thead>
                             <tr>
@@ -229,12 +247,12 @@
             <h3 class="text-center">Berita Terbaru COVID-19 di Samarinda</h3>
             <div style="margin: 38px;"></div>
             
-            <!-- Corousel -->
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <!-- Corousel Boostrap -->
+            <div id="carouselBerita" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
-                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                  <li data-target="#carouselBerita" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselBerita" data-slide-to="1"></li>
+                  <li data-target="#carouselBerita" data-slide-to="2"></li>
                 </ol>
 
                 <!-- List News -->
@@ -275,11 +293,11 @@
                 <!-- Close News -->
 
                 <!-- Prev and Next Button -->
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <a class="carousel-control-prev" href="#carouselBerita" role="button" data-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="sr-only">Previous</span>
                 </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <a class="carousel-control-next" href="#carouselBerita" role="button" data-slide="next">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="sr-only">Next</span>
                 </a>
@@ -472,7 +490,13 @@
         </div>
 
     </main>
-    <footer>Footer</footer>
+    <footer>
+        <div class="text-center py-3">© 2020 Copyright:
+            <a id="link-footer" href="#"> SiCosa.com</a>
+        </div>
+    </footer>
+
+    <!-- Menjalankan script main js -->
     <script src='js/main.js'></script>
 </body>
 

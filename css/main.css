@@ -1,4 +1,6 @@
 /* CSS Variable */
+/* Membudahkan untuk memangil color tema yang kita pilih
+membuatnya mudah dibaca */
 :root {
     --primary-color: darkslateblue;
     --secondary-color: #F43331;
@@ -138,5 +140,10 @@ html, body, main, footer {
 /* Close Main */
 
 footer {
-    background-color: darkslategray;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+#link-footer {
+    color: var(--secondary-color);
 }
